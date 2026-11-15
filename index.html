@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تحميل تطبيق CCLE SETIF</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #111827;
+      font-family: Tahoma, Arial, sans-serif;
+      padding: 16px;
+    }
+
+    .poster-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .poster-wrapper img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .download-hotspot {
+      position: absolute;
+      left: 31%;
+      bottom: 12%;
+      width: 38%;
+      height: 21%;
+      border-radius: 22px;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.15s ease, background 0.2s ease;
+    }
+
+    .download-hotspot:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: scale(1.03);
+    }
+
+    .download-hotspot:active {
+      transform: scale(0.97);
+    }
+
+    .fallback-btn {
+      margin-top: 16px;
+      padding: 12px 28px;
+      background: linear-gradient(180deg, #22c55e, #15803d);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      border: 2px solid #eab308;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="poster-wrapper">
+    <img src="poster.jpg" alt="تعاونية الحبوب والبقول الجافة - سطيف - تحميل التطبيق" />
+
+    <!-- ضع رابط ملف APK المباشر مكان YOUR_APK_DOWNLOAD_LINK_HERE -->
+    <a
+      class="download-hotspot"
+      href="YOUR_APK_DOWNLOAD_LINK_HERE"
+      download
+      aria-label="تحميل التطبيق"
+      title="تحميل التطبيق"
+    ></a>
+  </div>
+
+  <!-- ضع رابط ملف APK المباشر مكان YOUR_APK_DOWNLOAD_LINK_HERE -->
+  <a class="fallback-btn" href="YOUR_APK_DOWNLOAD_LINK_HERE" download>
+    تحميل التطبيق (APK)
+  </a>
+
+</body>
+</html>
